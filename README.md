@@ -4,14 +4,14 @@ First-year Computer Science Engineering (AI/ML) student. I am working on
 open-source developer tooling, currently contributing to Jenkins.
 ## Current open-source work
 
-**Jenkins** (GSoC 2027 preparation)
+**Jenkins** 
 - [PR #970](https://github.com/jenkinsci/plugin-installation-manager-tool/pull/970) **[Merged]**:
   plugin-installation-manager-tool now validates and returns a clear error when a
   user-specified WAR file does not exist (fixes issue #641). Merged into upstream
   `master` with regression unit tests and CLI documentation.
 - Next: improving the "plugin not found" error message (issue #562).
 - Introduction on the Jenkins community forum:
-  [Harshit Neog, GSoC 2027](https://community.jenkins.io/t/harshit-neog-introducing-myself-to-the-jenkins-ecosystem-for-gsoc-2027/37456)
+  [Harshit Neog](https://community.jenkins.io/t/harshit-neog-introducing-myself-to-the-jenkins-ecosystem-for-gsoc-2027/37456)
 
 **Hyperview** (server-driven mobile UI framework for React Native)
 - [PR #1392](https://github.com/Instawork/hyperview/pull/1392) [In Review]: supports the
