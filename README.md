@@ -1,9 +1,7 @@
 # Harshit Neog
 
 First-year Computer Science Engineering (AI/ML) student. I am working on
-open-source developer tooling and preparing for Google Summer of Code 2027
-with Jenkins.
-
+open-source developer tooling, currently contributing to Jenkins.
 ## Current open-source work
 
 **Jenkins** (GSoC 2027 preparation)
