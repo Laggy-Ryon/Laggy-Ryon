@@ -19,7 +19,7 @@ First-year CSE (AI/ML) undergraduate building developer tooling, CI/CD infrastru
 | :--- | :--- |
 | **Upstream OSS Merged** | **5 PRs** across `jenkinsci`, `Apicurio` (CNCF), and `checkstyle` |
 | **Upstream OSS Active** | **4 PRs** (`1` Approved with Auto-Merge, `2` CI-Green awaiting review, `1` In Review with SonarQube Quality Gate passed) |
-| **Project Contributions** | Core author of [`triage3am`](https://github.com/Laggy-Ryon/triage3am) and autonomous agent firewall module `@mandate/agent` ([PR #1](https://github.com/kaifkhan93544/Mandate/pull/1) merged) |
+| **Project Contributions** | Core author of [`triage3am`](https://github.com/Laggy-Ryon/triage3am) and autonomous agent firewall module `@mandate/agent` ([`VinayKhandia/mandate`](https://github.com/VinayKhandia/mandate)) |
 | **Core Stack** | Java (17/25), TypeScript, Python, Maven, OpenRewrite, Checkstyle, SpotBugs, Vitest, Zod |
 
 ---
@@ -64,10 +64,10 @@ A deterministic AIOps log analysis engine and web dashboard that distills 10,000
 - **Root-Cause & Cascade Inference**: Prioritizes earliest anomalous triggers ("patient zero") by timing, burst rate, cross-service blast radius, and stack severity, reconstructing `T0 -> T1 -> T2` failure propagation chains.
 - **Production-Safe Ingestion**: Features a threaded HTTP server, lazy streaming iterators, magic-byte `.gz` decompression, traversal-safe path handling (`SafePathManager`), 11 built-in diagnostic runbooks, and Slack/Markdown/CSV/JSON post-mortem exports.
 
-### [Mandate (`@mandate/agent`)](https://github.com/kaifkhan93544/Mandate) — AI Agent Spending Firewall & Intent Ledger
+### [Mandate (`@mandate/agent`)](https://github.com/VinayKhandia/mandate) — AI Agent Spending Firewall & Intent Ledger
 `TypeScript (Strict)` · `Node.js` · `Zod` · `Vitest` · `Google Gemini API` · `SHA-256`
 
-A deterministic payment authorization guardrail sitting between autonomous AI shopping agents and payment rails so compromised or prompt-injected agents cannot spend outside user-signed boundaries ([Architecture Fork](https://github.com/Laggy-Ryon/mandate) · [Merged Module PR #1](https://github.com/kaifkhan93544/Mandate/pull/1)).
+A deterministic payment authorization guardrail sitting between autonomous AI shopping agents and payment rails so compromised or prompt-injected agents cannot spend outside user-signed boundaries ([Architecture Fork](https://github.com/Laggy-Ryon/mandate)).
 - **Privilege Separation**: Designed `@mandate/agent` around a create-only `PayPalCreateOrderClient` boundary so capture/void credentials never touch the agent runtime.
 - **Untrusted LLM Guardrails**: Enforces strict `zod` schema validation on model outputs, integer minor-unit arithmetic verification, secret redaction, and SSRF-guarded HTML extraction (`browsePage`).
 - **Adversarial Verification**: Built a 5-scenario staged prompt-injection attack suite (`/injected`, `/wrong-merchant`, `/currency-switch`, `/social-engineering`, `/clean`), cryptographically hashed SHA-256 Intent Receipts, and 31 offline Vitest unit tests.
