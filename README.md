@@ -50,9 +50,8 @@ I contribute small, well-tested fixes to developer tools, and I like work where 
 
 ## Projects
 
-**[triage3am](https://github.com/Laggy-Ryon/triage3am)**
-A dependency-free incident triage tool written in Python. It clusters similar log lines into templates, reports the earliest likely trigger, and reconstructs the order in which services failed. See the README for design trade-offs and limitations.
-
+* **[triage3am](https://github.com/Laggy-Ryon/triage3am)**: A dependency-free incident triage tool written in Python. It clusters similar log lines into templates, reports the earliest likely trigger, and reconstructs the order in which services failed. See the README for design trade-offs and limitations.
+* **[mandate](https://github.com/Laggy-Ryon/mandate)**: A deterministic spending firewall and intent ledger for autonomous AI shopping agents (`@mandate/agent`) written in TypeScript. Enforces cryptographic privilege separation, strict Zod schema validation, and SHA-256 intent receipts so prompt-injected or compromised agents cannot execute unauthorized payments.
 ---
 
 ## Toolbox
